@@ -1,1 +1,6 @@
 # GettingandCleanDataProject
+
+Included in this repository is a script that will take the data provided for this assignment (which can be found here: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) and clean up the data to present a tidied data set per the guidelines provided. It also includes a finalized version of that data for review and a codebook for the variables for that file.
+
+For a description of the code itself, I have commented within the script. However, the essential gist of it is we combine both the test and train data, which have corresponding cols but varying amounts of rows, remove all extraneous variables (in this case, all non mean or standard deviation data), label the frame appropriately using the file that names all the data in the first place. Then, loops through the frame for each subject and a corresponding activity and provides the mean for that particular variable with respect to a particular subject AND activity. When it has completed this, it tidies up a little further by adding columns labeling which subject and activity the data corresponds to, then labels them appropriately again, finally outputting a file to the directory that is that data frame. 
+
